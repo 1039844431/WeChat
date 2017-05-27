@@ -1,0 +1,161 @@
+@CHARSET "UTF-8";
+
+.adress_find_out {
+	height: 60px;
+	width: 100%;
+	line-height:60px;
+	text-align:center;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #DCDCDC;
+	background-color: #EDEDED;
+}
+.searchinput{
+	border-right-width: 0px;
+	padding-left: 3px;
+	width: 80%;
+	font-family: arial;
+	float: left;
+	
+	color: #636365;
+	margin-left: 10px;
+	margin-top:20px;
+	height:30px;
+	font-size: 8pt;
+	vertical-align: middle;
+
+	
+	border-top: solid #D1D1D1 1px;
+	border-bottom: solid #D1D1D1 1px;
+	border-left: solid #D1D1D1 1px;
+	
+	-moz-border-radius: 2px 0px 0px 2px;
+    -webkit-border-radius: 2px 0px 0px 2px;
+    border-radius:5px 0px 0px 5px;
+}
+.searchinput:FOCUS{
+	border-right-width: 0px;
+	padding-left: 3px;
+	width: 80%;
+	font-family: arial;
+	float: left;
+	
+	color: #636365;
+	margin-left: 10px;
+	margin-top:20px;
+	height:30px;
+	font-size: 8pt;
+	vertical-align: middle;
+
+	
+	border-top: solid #EE7621 1px;
+	border-bottom: solid #EE7621 1px;
+	border-left: solid #EE7621 1px;
+	border-right: solid #EE7621 1px;
+	-moz-border-radius: 2px 0px 0px 2px;
+    -webkit-border-radius: 2px 0px 0px 2px;
+    border-radius:5px 0px 0px 5px;
+    
+}
+.searchimage{
+	
+	border-right-width: 0px;
+	padding-left: 0px;
+	width: 14%;
+	
+	float: left;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	color: #636365;
+	
+	margin-top:20px;
+	height:32px;
+	font-size: 8pt;
+	vertical-align: middle;
+	border-left-width: 0px;
+	background-position:center;
+	border: solid #D1D1D1 1px;
+	-moz-border-radius: 0px 2px 2px 0px;
+    -webkit-border-radius: 0px 2px 2px 0px;
+    border-radius:0px 5px 5px 0px;
+	background-image: url("../images/page/search.png");
+	background-repeat: no-repeat;
+}
+
+.searchaction{
+	width: 21px;
+	float: left;
+	height: 17px;
+}
+.crrunt_school{
+	height: 45px;
+	line-height:45px;
+	background-color: #EDEDED;
+	border-bottom: 1px;
+	border-bottom-color:#DCDCDC;
+	width: 100%;
+}
+.crrunt_school_name{
+	color: #EE7621;
+	font-size: 17px;
+	font-weight: bolder;
+	width: 60%;
+	float: left;
+	text-align:left;	
+}
+.style_school{
+	margin-left:10%;
+	font-size:14px;
+	text-align:right;
+	width: 30%;
+	float: left;
+	
+	}
+.navigation_title{
+	height: 40px;
+	line-height:40px;
+	background-color: white;
+	border-bottom: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#EE7621;
+	width: 100%;
+}
+.navigation_name{
+	font-weight: bolder;
+	font-size: 14px;
+	margin-left: 10px; 
+}
+.around_school{
+	
+	
+	background-color: white;
+	border-bottom: 1px;
+	
+	width: 100%;
+}
+.around_school_name{
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	color:#EE7621;
+	background-color: white;
+	margin-left:10px;
+	
+	border-bottom: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#DCDCDC;
+	width: 100%;
+}
+.all_school_name{
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	color:#4F4F4F;
+	background-color: white;
+	margin-left:10px;
+	
+	border-bottom: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#DCDCDC;
+	width: 100%;
+}

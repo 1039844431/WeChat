@@ -1,0 +1,91 @@
+ .dark-matter {
+margin-top:20px;
+margin-left: auto;
+margin-right: auto;
+height:290px;
+max-width: 500px;
+background: #555;
+padding: 20px 30px 20px 30px;
+font: 10px "Helvetica Neue", Helvetica, Arial, sans-serif;
+color: #D3D3D3;
+text-shadow: 1px 1px 1px #444;
+border: none;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+}
+.dark-matter h1 {
+padding: 0px 0px 15px 20px;
+display: block;
+border-bottom: 1px solid #444;
+margin: -10px -20px 24px -20px;
+text-align: center;
+}
+.dark-matter h1>span {
+display: block;
+font-size: 11px;
+}
+.dark-matter label {
+display: block;
+margin: 0px 0px 5px;
+}
+.dark-matter label>span {
+float: left;
+width: 20%;
+text-align: right;
+padding-right: 10px;
+margin-top: 10px;
+font-weight: bold;
+}
+.dark-matter input[type="text"], .dark-matter input[type="email"], .dark-matter textarea, .dark-matter select {
+border: none;
+color: #525252;
+height: 45px;
+line-height:15px;
+margin-bottom: 16px;
+margin-right: 6px;
+margin-top: 2px;
+outline: 0 none;
+padding: 5px 0px 5px 5px;
+width: 70%;
+border-radius: 2px;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+background: #DFDFDF;
+}
+.dark-matter textarea{
+height:100px;
+padding: 5px 0px 0px 5px;
+width: 100%;
+height: 180px;
+}
+.dark-matter .button {
+float:right;
+background: #FFCC02;
+border: none;
+padding: 7px 15px 7px 15px;
+color: #585858;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+text-shadow: 1px 1px 1px #FFE477;
+font-weight: bold;
+box-shadow: 1px 1px 1px #3D3D3D;
+-webkit-box-shadow:1px 1px 1px #3D3D3D;
+-moz-box-shadow:1px 1px 1px #3D3D3D;
+}
+.updiv{
+margin-top:10px;
+border-top: 1px solid #444;
+height: 40px;
+width: 100%;
+}
+.upimage{
+margin-top:7px;
+margin-left:15px;
+height: 30px;
+width: 30px;
+background-repeat:no-repeat;
+background-image: url("images/page/upImage.png");
+}

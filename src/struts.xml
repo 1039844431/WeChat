@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.action.extension" value="do"></constant>
+	<constant name="struts.devMode" value="true"></constant>
+	<constant name="struts.ui.theme" value="simple"></constant>
+	<constant name="struts.multipart.maxSize" value="2097152"/>
+	
+	<package name="system" namespace="/system" extends="struts-default">
+	
+		<action name="UserInfoAction_*" class="com.nicexcx.action.UserInfoAction" method="{1}">
+			<result name="userIndex">
+			/WEB-INF/page/userindex.jsp
+			</result>
+			<result name="setUserInfo">
+			/WEB-INF/page/setUserInfo.jsp
+			</result>
+			<result name="loginerror">
+			/WEB-INF/page/index.jsp
+			</result>
+			<result name="mobileLoginHome">
+			/WEB-INF/MobilePage/my_home.jsp
+			</result>
+		</action>
+		<action name="RecommendAction_*" class="com.nicexcx.action.RecommendAction" method="{1}">
+		</action>
+		<action name="CollectAction_*" class="com.nicexcx.action.CollectAction" method="{1}">
+			<result name="gotoMobileCollect">
+				/WEB-INF/MobilePage/my_collect.jsp
+			</result>
+			<result name="gotoMobileIssue">
+				/WEB-INF/MobilePage/my_issue.jsp
+			</result>
+		</action>
+		<action name="CommentAction_*" class="com.nicexcx.action.CommentAction" method="{1}">
+		</action>
+		<action name="AppDetailAction_*" class="com.nicexcx.action.AppDetailAction" method="{1}">
+			<result name="detail">			
+			/WEB-INF/page/topic.jsp
+			</result>
+			<result name="mobileDetail">			
+			/WEB-INF/MobilePage/mobiletopic.jsp
+			</result>
+			<result name="putCategory">
+			/WEB-INF/page/category.jsp
+			</result>
+			<result name="searchHome">
+			/WEB-INF/page/search.jsp
+			</result>
+			<result name="putMobileCategory">
+			/WEB-INF/MobilePage/mobile_appList.jsp
+			</result>
+			<result name="serchAppList">
+			/WEB-INF/MobilePage/serch_appList.jsp
+			</result>
+		</action>
+		<action name="IssueAppAction_*" class="com.nicexcx.action.IssueAppAction" method="{1}">
+			<result name="home">			
+			/WEB-INF/page/issue.jsp
+			</result>
+			<result name="mobileHome">			
+			/WEB-INF/MobilePage/mobileissue.jsp
+			</result>
+			<result name="issuesuccess">
+			/WEB-INF/page/issuesuccess.jsp
+			</result>
+			<result name="mobileIssuefail">
+			/WEB-INF/page/mobileissuefalse.jsp
+			</result>
+			<result name="mobileIssuesuccess">
+			/WEB-INF/MobilePage/mobileissuesuccess.jsp
+			</result>
+			<interceptor-ref name="fileUploadStack">			
+				<param name="allowedExtensions">png,bmp,jpg,jpeg,gif</param> 
+				<param name="maximumSize">2048*2048</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+			<result name="input">/WEB-INF/page/issuefalse.jsp</result>
+		</action>
+	
+		<action name="IndexAction_*" class="com.nicexcx.action.IndexAction" method="{1}">
+			<result name="index">
+			/WEB-INF/page/index.jsp
+			</result>
+			<result name="mobileIndex">
+			/WEB-INF/MobilePage/index.jsp
+			</result>
+			<result name="gotomobileindex" type="redirectAction">
+				<param name="actionName">IndexAction_mobileIndex</param>
+				<param name="namespace">/system</param>
+			</result>
+		</action>
+	</package>
+
+</struts>

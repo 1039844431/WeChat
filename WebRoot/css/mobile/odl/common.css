@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+body {
+	line-height: normal;
+	font-family: "Hiragino Sans GB", "Hiragino Sans GB W3",
+		"Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}

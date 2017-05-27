@@ -1,0 +1,84 @@
+.home_rec_p{background:#fff; margin:.15rem 0; border-top:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; padding:0 .15rem .15rem .15rem;}
+.home_rec_p .title{height:.4rem; border-bottom:1px solid #EE7621; margin-bottom:.2rem;}
+.home_rec_p .title h2{font-size:.28rem; height:.8rem; width:2rem; background:#fff; margin:auto; font-weight:bold; line-height:.8rem; text-align:center; display:block; color:#EE7621;}
+.home_rec_p li{display:block; border-bottom:1px dotted #f1f1f1; overflow:hidden; padding:.15rem 0;}
+.home_rec_p li a{display:block; height:2.22rem; overflow:hidden; background:#fff;}
+.home_rec_p li a:active{opacity:.5;}
+.home_rec_p li img{width:1.5rem; height:1.5rem; margin:.2rem .15rem 0 0; float:left; border-radius:.05rem;}
+.home_rec_p li .pname{
+	font-size:.25rem;
+	line-height:.5rem;
+	overflow:hidden;
+	height:.5rem;
+	width:50%;
+	display:block;
+	font-weight:bold;
+	float:left;
+	
+	}
+.home_rec_p li .padr{
+	font-size:.18rem; 
+	line-height:.3rem;
+	overflow:hidden; 
+	height:.3rem; 
+	width:50%; 
+	display:block;
+	float:left; 
+	background:url(../../img/MobileImg/position.svg) left center no-repeat; 
+	background-size:.2rem .2rem; 
+	padding-left:.25rem; 
+	color:#666;
+	
+	}
+.home_rec_p li .pway{
+	font-size:.18rem; 
+	line-height:.3rem;
+	overflow:hidden; 
+	height:.3rem; 
+	width:50%;
+	display:block;
+	float:left; 
+	background:url(../../img/MobileImg/way.svg) left center no-repeat; 
+	background-size:.2rem .2rem; 
+	padding-left:.25rem; 
+	color:#666;}
+
+.home_rec_p li .ptime_start{
+	font-size:.18rem; 
+	line-height:.3rem;
+	overflow:hidden; 
+	height:.3rem; 
+	width:50%;
+	display:block;
+	float:left; 
+	background:url(../../img/MobileImg/time_start_back.svg) left center no-repeat; 
+	background-size:.2rem .2rem; 
+	padding-left:.25rem; 
+	color:#666;
+	}
+.home_rec_p li .ptime_end{
+	font-size:.18rem; 
+	line-height:.3rem;
+	overflow:hidden; 
+	height:.3rem; 
+	width:50%;
+	display:block;
+	float:left; 
+	background:url(../../img/MobileImg/time_end_back.svg) left center no-repeat; 
+	background-size:.2rem .2rem; 
+	padding-left:.25rem; 
+	color:#666;}
+
+.home_rec_p li .pucount{
+	font-size:.18rem; 
+	line-height:.3rem;
+	overflow:hidden; 
+	height:.3rem; 
+	width:50%;
+	display:block;
+	float:left; 
+	background:url(../../img/MobileImg/popularity.svg) left center no-repeat; 
+	background-size:.2rem .2rem; 
+	padding-left:.25rem; 
+	color:#666;
+	}

@@ -1,0 +1,62 @@
+.pass-header-title{line-height:44px;font-size:20px;text-align:center;width:100%;display:block;}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}
+.pass-header{background:#f8f8f8;border-bottom:1px solid #ccc;height:44px;width:100%;padding:0;position:relative;display:block;text-align:center;}
+.pass-header-back{background:url() no-repeat 15px 13px;-webkit-background-size:12px 20px;padding:13px 0 13px 15px;width:30px;height:18px;position:absolute;left:0;top:0;}
+.pass-header-title{line-height:44px;font-size:20px;text-align:center;width:100%;display:block;}
+.form-wrapper{padding:0 10px;-webkit-box-sizing:border-box;}
+.error_area{min-height:14px;padding:5px 10px 5px 18px;line-height:14px;font-size:14px;}
+.form-item{display:-webkit-box;display:-moz-box;display:box;width:100%;background:#fff;border:1px solid #bcbcbc;margin-bottom:10px;}
+.form-input-wrapper{display:-webkit-box;display:-moz-box;display:box;box-sizing:border-box;-webkit-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-moz-box-flex:1;-webkit-box-flex:1;box-flex:1;height:50px;padding:0 14px;background:#fff;}
+.text-label{display:block;}
+.text-label-mobilenum{width:45px;margin-right:10px;padding-left:0;font-size:14px;line-height:48px;}
+ .pass-button{
+    border: 0px;;
+    font-size: 16px;
+    width: 100%;
+    line-height: 44px;	
+    display: block;
+    text-align: center;
+    -webkit-border-radius: 2px;
+    padding: 1px 6px;
+    padding: 2px 6px 3px;
+    background-color: #A4C7F3;
+    text-rendering: auto; 
+}
+ .input-text{
+	border: none;
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(255,0,0,0);
+    font-size: 14px;
+    height: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: #333;
+    line-height: 20px;
+    -webkit-rtl-ordering: logical;
+    -webkit-user-select: text;
+    cursor: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    font: 13.3333px Arial;
+    text-rendering: auto;
+    -webkit-writing-mode: horizontal-tb;
+}
+.login-bottom{
+	border: 0px;
+	height:25px;
+	width:40px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color:#A4C7F3;	
+	border-bottom-right-radius: 5px; 
+	float: right; 
+	margin-right:10px;  
+	margin-top: 10px;
+	
+}

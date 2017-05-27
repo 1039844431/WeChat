@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.nicexcx.domain.GoodRecommend" table="goodrecommend">
+		<id name="ID" type="string">
+			<column name="id" sql-type="varchar(32)" not-null="true"></column>
+			<generator class="uuid"></generator>
+		</id>		
+		<many-to-one name="appDetail" column="appdetail_id" class="com.nicexcx.domain.AppDetail" unique="true"></many-to-one>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,4 @@
+#Fri Feb 24 14:10:06 CST 2017
+eclipse.preferences.version=1
+validator.Checked=WebRoot/js/mobile/odl/jquery.1.11.3.min.js,WebRoot/js/jquery-1.7.2.min.js,WebRoot/js/mobile/jquery.1.11.3.min.js,WebRoot/WEB-INF/urlrewrite.xml,WebRoot/img,WebRoot/MobileImg/thumb_direction.svg,WebRoot/MobileImg/no_favorite.svg
+validator.Unchecked=

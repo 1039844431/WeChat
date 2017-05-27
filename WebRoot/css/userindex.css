@@ -1,0 +1,366 @@
+body{
+
+	margin: 0 auto;
+	background-color: #F0F0F0;
+}
+.user_collect_container{
+	display: none;
+}
+.out_header_container{
+	background-color: #FFFFFF;
+	width: 100%;
+	float: left;
+	margin: 0 auto;
+	border-bottom: 2px solid #ECECEC;
+}
+.header_container{
+	width: 1050px;
+	height: 80px;
+	margin: 0 auto;
+}
+.header_logo{
+	float:left;
+	width:179px;
+	height:69px;
+	background-image: url("../img/nicexcx.png");
+	background-size:179px 69px;
+	background-position:right top;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.adver{
+	width: 800px;
+	height:69px;
+	float:left;
+	
+	margin-left: 50px;
+}
+.adver_main_title{
+	float:left;
+	width: 100%;
+	margin-top: 9px;
+	height: 30px;
+	line-height:30px;
+	font-size:19px;
+	font-weight:bold;
+}
+.adver_little_title{
+	
+	float: left;
+	width: 160px;
+	height: 30px;
+	margin-left: 10px;
+}
+.adver_img{
+	width: 30px;
+	height: 30px;
+	float:left;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+.adver_img_one{
+	background-image: url("../img/adverone.svg");
+	background-size:20px 20px;
+}
+.adver_img_two{
+	background-image: url("../img/adverotwo.svg");
+	background-size:20px 20px;
+}
+.adver_img_three{
+	background-image: url("../img/adverothree.svg");
+	background-size:20px 20px;
+}
+.adver_little_name{
+	float: left;
+	width: 130px;
+	height: 30px;
+	font-size:12px;
+	color: #C0C0C0;
+	line-height: 30px;
+}
+.body_container{
+	width: 1050px;
+	margin: 0 auto;
+	
+}
+.user_container{
+	float: left;
+	margin-top: 20px;
+	width: 230px;
+	height: 300px;
+	margin-left:50px;
+	background-color: #fff;
+	border: 1px solid #CFCFCF;
+}
+.user_img{
+	float: left;
+	margin-top: 20px;
+	width: 100px;
+	height: 100px;
+	margin-left:65px;
+	background-image: url("../img/userImg.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:100px 100px;
+}
+.username_container{
+	float:left;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	width: 100%;
+	height: 20px;
+	font-weight:bold;
+	line-height: 20px;
+	text-align: center;
+	margin-top: 10px;
+	color: #FF8C00;
+}
+.setUser{
+	width: 60%;
+	margin-left:20%;
+	height: 25px;
+	border-radius:5px;
+	line-height:25px;
+	margin-top:10px;
+	float:left;
+	font-size:12px;
+	text-align:center;
+	background-color: #CFCFCF;
+	cursor: pointer;
+}
+.setUser:HOVER{
+	background-color: #FF8C00;
+	color: white;
+	font-weight: bold;
+}
+.user_bottom_container{
+	float: left;
+	width: 100%;
+	height: 95px;
+	margin-top:20px;
+	background-color:  #363636;
+}
+.user_bottom_div{
+	float: left;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	color: white;
+	text-align: center;
+}
+.logout{
+	cursor: pointer;
+	background-color: red;
+}
+
+.operate_container{
+	float: left;
+	margin-top: 20px;
+	width: 730px;
+	margin-left:30px;
+	
+	
+}
+.user_nav{
+	background-color: #fff;
+	border: 1px solid #CFCFCF;
+	float: left;
+	width: 100%;
+	height: 40px;
+	border-radius:4px;
+}
+.user_nav_li{
+	float: left;
+	height: 39px;
+	line-height: 39px;
+	width: 70px;
+	margin-left: 50px;
+	cursor: pointer;
+	text-align: center;
+}
+.user_nav_li_action{
+	border-bottom: 2px solid #FF8C00;
+	color: #FF8C00;
+	font-weight: bold;
+}
+.my_issue{
+	margin-left: 30px;
+}
+.user_operate{
+	background-color: #fff;
+	border: 1px solid #CFCFCF;
+	float: left;
+	width: 100%;
+	
+	margin-top:20px;
+	border-radius:4px;
+}
+.issue_detail{
+	width:336px;
+	height:100%;
+	float:left;
+	cursor: pointer;
+}
+.addMyIssue{
+
+	float: left;
+}
+.item_personal{
+
+	border-radius:15px;
+	width:616px;
+	height:144px;
+	background-color:#FFF;
+	margin-top:25px;
+	margin-left:45px;
+	margin-bottom:25px;
+	float:left;
+	-webkit-box-shadow: 0 1px 3px #c3c3c3;
+    -moz-box-shadow: 0 1px 3px #c3c3c3;
+    box-shadow: 0 1px 3px #c3c3c3;  
+	overflow:hidden;
+	
+	-webkit-transition: box-shadow 0.2s ease-in-out;
+	-moz-transition: box-shadow 0.2s ease-in-out;
+	-o-transition: box-shadow 0.2s ease-in-out;
+	-ms-transition: box-shadow 0.2s ease-in-out;
+	transition: box-shadow 0.2s ease-in-out;
+	
+}
+.detail_operate{
+	float:right;
+	height:114px;
+	margin-top:15px;
+	border-left:1px solid #CFCFCF;
+	width: 250px;
+}
+.operate{
+	float:left;
+	height: 57px;
+	line-height:57px;
+	width: 80%;
+	margin-left:10%;
+	text-align: center;
+	color:  #FF8C00;
+}
+.operate_state{
+	
+	border-bottom: 1px solid #CFCFCF;
+}
+.operate_delete{
+	cursor: pointer;
+	margin-top: 10px;
+	height: 37px;
+	line-height:37px;
+	border-radius:15px;
+}
+.operate_delete_action{
+	background-color: #FF8C00;
+	color: white;
+}
+.no_issue{
+	display:none;
+	float:left;
+	height: 300px;
+	width: 100%;
+}
+.no_img{
+	width: 30%;
+	margin-left:35%;
+	height: 150px;
+	float: left;
+	background-image:url("../img/no_result.svg");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:6rem 6rem;
+	
+}
+.no_issue_message{
+	float: left;
+	width: 50%;
+	height: 50px;
+	margin-left: 25%;
+	color: #FF9900;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+}
+.user_issue{
+	
+	margin-top:50px;
+	float: left;
+	width: 100%;
+	height: 45px;
+	
+}
+.user_issue_buttom{
+	width: 20%;
+	height: 100%;
+	float: left;
+	line-height:45px;
+	text-align:center;
+	font-weight:bold;
+	font-size:16px;
+	background-color:  #FF9900;
+	margin-left: 40%;
+	border-radius:15px;
+	color: white;
+	cursor: pointer;
+}
+.user_issue_buttom:HOVER {
+	-webkit-box-shadow: 0 1px 3px #c3c3c3;
+    -moz-box-shadow: 0 1px 3px #c3c3c3;
+    box-shadow: 0 1px 3px #c3c3c3;  
+}
+.size_number_container{
+	float: left;
+	width: 100%;
+	height: 30px;
+	margin-bottom: 10px;
+}
+.size_number{
+	float: left;
+	height: 23px;
+	line-height:23px;
+	text-align:center;
+	width: 23px;
+	border-radius:50%;
+	margin-left: 20px;
+	background-color: #CFCFCF;
+	cursor: pointer;
+}
+.morePagenoact{
+	display: none;
+}
+.size_number_act{
+	background-color: #FF9900;
+	color: white;
+}
+.footer-bot{
+	width: 100%;
+	height: 100px;
+	float: left;
+	background-color: #222222;
+}
+.footer-wrapper{
+	width: 60%;
+	color:#EDFFBE;
+	float: left;
+	margin-left: 40%;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+.footer_link{
+	float: left;
+	width: 60%;
+	color:#EDFFBE;
+	margin-left: 39%;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+.link_a{
+	color: #EDFFBE;
+	text-decoration: none;
+	font-size: 13px;
+}

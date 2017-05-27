@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.nicexcx.domain.AppDetail" table="appdetail">
+		<id name="ID" type="string">
+			<column name="appdetail_ID" sql-type="varchar(32)" not-null="true"></column>
+			<generator class="uuid"></generator>
+		</id>		
+		<property name="appImg" type="string">
+			<column name="appdetail_appImg" sql-type="varchar(100)"></column>
+		</property>
+		<property name="appName" type="string">
+			<column name="appdetail__appName" sql-type="varchar(100)"></column>
+		</property>		
+		<property name="erweiImg" type="string">
+			<column name="appdetail__erweiImg" sql-type="varchar(32)"></column>
+		</property>
+		<property name="issueTime" type="date">
+			<column name="appdetail__issueTime" length="50"></column>
+		</property>	
+		<property name="tag" type="string">
+			<column name="appdetail_tag" sql-type="varchar(50)"></column>
+		</property>
+		
+		<property name="intro" type="string">
+			<column name="appdetail_intro" sql-type="varchar(500)"></column>
+		</property>
+		<property name="isIssue" type="integer">
+			<column name="appdetail_is_issue"></column>
+		</property>
+		<property name="isDelete" type="integer">
+			<column name="appdetail_is_delete"></column>
+		</property>
+		<property name="peopleLookNum" type="integer">
+			<column name="appdetail_people_lookNum"></column>
+		</property>
+		<set name="appIntroImgs" lazy="true" inverse="true" cascade="save-update">
+			<key column="appdetail_ID" not-null="true"></key>
+			<one-to-many class="com.nicexcx.domain.AppIntroImg"/>
+		</set>
+		<many-to-one name="categoryDic" column="appdetail_category" class="com.nicexcx.domain.CategoryDic" unique="true"></many-to-one>
+	    <many-to-one name="userID" column="appdetail_issue_userID"  class="com.nicexcx.domain.UserInfo" unique="true"></many-to-one>
+	</class>
+</hibernate-mapping>

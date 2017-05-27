@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+
+
+.header {
+	height: 46px;
+	background-color: #EE7621;
+}
+.arrows {
+			margin-left:5px;
+	        width:  0px;
+            height: 0px;
+            border: 5px;
+            float: left;
+            margin-top:17px;
+            border-style: solid;
+            border-color:white transparent transparent;;
+            display: inline;
+}
+
+.header_left {
+	float: left;
+	height: 40px;
+	width: 150px;
+	line-height: 40px;
+	margin-left: 12px;
+	font-size: 16px;
+	background-color: #EE7621;
+	padding-top: 3px;
+}
+
+.header_right {
+	cursor:pointer;
+	height: 40px;
+	line-height: 40px;
+	float: right;
+	width: 40px;
+	padding-top: 3px;
+	font-size: 16px
+}
+.header_username {
+	height: 40px;
+	line-height: 40px;
+	float: right;
+	width: 160px;
+	font-size: 17px;
+	text-align: right;
+	padding:0px 8px 0px 0px;
+	color:#FFFFFF;
+}
+.header_right a {
+	float:left;
+	color: #fff;
+	text-decoration: none
+}
+.school {
+	float:left;
+	color: #fff;
+	text-decoration: none
+}
+.homeimage{
+	line-height:40px;
+	width:40px;
+	height:40px;
+	background-position: center;
+	background-repeat:no-repeat;
+	background-image: url("../images/page/homepage.png");
+}

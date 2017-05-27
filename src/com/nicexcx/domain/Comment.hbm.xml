@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.nicexcx.domain.Comment" table="comment">
+		<id name="ID" type="string">
+			<column name="id" sql-type="varchar(32)" not-null="true"></column>
+			<generator class="uuid"></generator>
+		</id>	
+		<property name="commentTime" type="date">
+			<column name="comment_time" length="50"></column>
+		</property>
+		<property name="appDetaiId" type="string">
+		    <column name="appdtail_id" sql-type="varchar(32)"></column>
+		</property>	
+		<property name="commentDetail" type="string">
+		    <column name="comment_detail" sql-type="varchar(500)"></column>
+		</property>	
+		<property name="zanTop" type="integer">
+			<column name="zan_top"></column>
+		</property>	
+		<property name="zanDown" type="integer">
+			<column name="zan_down"></column>
+		</property>	
+		<many-to-one name="userId" column="user_id" class="com.nicexcx.domain.UserInfo" unique="true"></many-to-one>
+	</class>
+</hibernate-mapping>

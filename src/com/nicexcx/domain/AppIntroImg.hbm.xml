@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.nicexcx.domain.AppIntroImg" table="appintroimg">
+		<id name="ID" type="string">
+			<column name="appIntroImg_ID" sql-type="varchar(32)" not-null="true"></column>
+			<generator class="uuid"></generator>
+		</id>		
+
+		<property name="AppIntroImg" type="string">
+			<column name="appIntroImg" sql-type="varchar(100)"></column>
+		</property>		
+		<many-to-one name="appDetailID" column="appdetail_ID"></many-to-one>
+	</class>
+</hibernate-mapping>

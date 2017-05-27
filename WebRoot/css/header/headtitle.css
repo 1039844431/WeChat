@@ -1,0 +1,288 @@
+.out_head1{
+	position:fixed;
+	z-index:98;
+	margin: 0 auto;
+	width: 100%;
+	background-color: #fff;
+	border-bottom: 1px solid  rgba(192,192,192, 0.4);
+}
+.head1{
+	
+	width: 1040px;
+	height: 30px;
+	
+	line-height:30px;
+	margin: 0 auto;
+	
+}
+
+a:link,a:visited{ 
+ text-decoration:none;  /*超链接无下划线*/ 
+ color: #999999; text-decoration: none;
+}
+
+a:hover{ 
+ text-decoration:none;  /*鼠标放上去有下划线*/ 
+ color: #F6851F;
+}
+a{
+	font-size: 12px;
+	color: #6C6C6C;
+	
+}
+.headleft{	
+	height: 30px;
+	float: left;
+	position:relative;
+}
+
+.headleftselct{
+	
+	font-size:16px;
+	float: left;
+	height: 30px;
+	margin-right:18px;
+	line-height: 30px;
+}
+.headright{
+	float: right;
+	
+}
+.headright li{
+	font-size:16px;
+	float: left;
+	height: 30px;	
+	margin-right:18px;
+	line-height: 30px;
+}
+
+.myUser{
+	color:#FF9900;
+	font-size: 12px;
+	cursor:pointer;
+	display:none;
+}
+.myUser:HOVER{
+	text-decoration: underline;
+}
+.message{
+	float: left;
+	width: 80%;
+	height: 20px;
+	margin-left: 9%;
+	margin-top:0px;
+	line-height: 20px;
+	color: #FF9900;
+	display:none;
+	margin-top: 10px;
+}
+.login_body_container{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index:99;
+	background-color: rgba(192,192,192, 0.4);
+}
+.login_container{
+	float: left;
+	width: 400px;
+	background-color: #fff;
+	margin-left: 38%;
+	margin-top: 10%;
+	border-radius: 15px;
+	-webkit-box-shadow: 0 0 8px #696969, 0 0 8px #696969;
+    -moz-box-shadow: 0 0 8px #696969,  0 0 8px #696969;
+    box-shadow: 0 0 8px #696969,  0 0 8px #696969; 
+}
+.login_title_container{
+	float: left;
+	width:100%;
+	height:80px;
+	border-radius: 15px 15px 0 0;
+	border-bottom: 1px solid rgba(192,192,192, 0.4);
+}
+.login_close_container{
+	float: right;
+	height: 20px;
+	width:100%;
+}
+.login_close{
+	float:right;
+	height: 20px;
+	width:20px;
+	border-radius: 50%;
+	margin-right:10px;
+	margin-top:10px;
+	background-image: url("../../img/close_category.svg");
+	background-size:20px 20px;
+	background-repeat:no-repeat;
+	cursor: pointer;
+}
+.login_close:HOVER {
+	-webkit-box-shadow: 0 0 8px #FF6600;
+    -moz-box-shadow: 0 0 8px #FF9900;
+    box-shadow: 0 0 8px #FF9900; 
+}
+.login_title_name{
+	float:left;
+	width: 60px;
+	height: 60px;
+	margin-left:95px;
+	line-height: 60px;
+	text-align:center;
+	font-size:17px;
+	font-weight:bold;
+}
+.login_title_name_act{
+	border-bottom: 2px solid #FF9900;
+	color: #FF9900;
+	cursor: pointer;
+}
+.login_title_name:HOVER {
+	border-bottom: 2px solid #FF9900;
+	color: #FF9900;
+	cursor: pointer;
+}
+.input_container{
+	float:left;
+	width: 360px;	
+	margin-left:10px;
+	margin-top:20px;
+}
+.login_input_container{
+	height: 200px;
+	display: none;
+}
+.register_input_container{
+	height: 320px;
+	display: none;
+}
+.input_name{
+	float: left;
+	width:260px;
+	height:30px;
+	margin-left:25px;
+	border-radius: 5px;
+	line-height: 30px;
+	border: 1px solid rgba(192,192,192, 0.5);
+	background-repeat: no-repeat;
+	background-position: 10px;
+	padding-left: 40px;
+	color: #D3D3D3;
+	
+}
+
+.input_name:HOVER{
+	border: 1px solid #FF9900;
+}
+.input_name:FOCUS{
+	color:black;
+	border: 1px solid #FF9900;
+}
+.rootusername{
+	background-image: url("../../img/username.svg");
+	background-size:25px 25px;
+}
+.rootusername:FOCUS{
+	background-image: url("../../img/usernameact.svg");
+	background-size:25px 25px;
+}
+.rootusername:HOVER{
+	background-image: url("../../img/usernameact.svg");
+	background-size:25px 25px;
+}
+.rootpassword{
+
+	margin-top: 20px;
+	background-image: url("../../img/password.svg");
+	background-size:25px 25px;
+
+}
+
+.rootphone{
+	background-image: url("../../img/phone.svg");
+	background-size:25px 25px;
+}
+.rootphone:HOVER{
+	background-image: url("../../img/phoneact.svg");
+	background-size:25px 25px;
+}
+.rootphone:FOCUS{
+	background-image: url("../../img/phoneact.svg");
+	background-size:25px 25px;
+}
+.verification_buttom{
+	float: left;
+	width:110px;
+	height:38px;
+	cursor:pointer;
+	border-radius: 5px;
+	line-height: 38px;
+	text-align:center;
+	border: 1px solid rgba(192,192,192, 0.5);
+	margin-top: 20px;
+	margin-left: 20px;
+	
+}
+.code_image{
+	display: none;
+	float: left;
+	width:110px;
+	height:38px;
+	cursor:pointer;
+	margin-top: 20px;
+	margin-left: 20px;
+	border-radius: 5px;
+}
+.verification_buttom:HOVER{
+	border: 1px solid #FF9900;
+	color: #FF9900;
+}
+.verification{
+	width:130px;
+	margin-top: 20px;
+	background-image: url("../../img/replay.svg");
+	background-size:25px 25px;
+}
+.verification:HOVER{
+	background-image: url("../../img/replayact.svg");
+	background-size:25px 25px;
+}
+.verification:FOCUS{
+	background-image: url("../../img/replayact.svg");
+	background-size:25px 25px;
+}
+
+.rootpassword:HOVER{
+	background-image: url("../../img/passwordaction.svg");
+	background-size:25px 25px;
+}
+.rootpassword:FOCUS{
+	background-image: url("../../img/passwordaction.svg");
+	background-size:25px 25px;
+}
+.submit_button{
+	float: left;
+	width:260px;
+	height:40px;
+	border-radius: 10px;
+	border:0px;
+	margin-left:25px;
+	margin-top: 30px;
+	margin-left: 50px;
+	background-color: #FF9900;
+	color: white;
+	font-weight: bold;
+	font-size:16px;
+	cursor:pointer;
+	
+}
+.submit_button:HOVER {
+	-webkit-box-shadow: 1px 1px 1px #999;
+    -moz-box-shadow: 1px 1px 1px #999;
+    box-shadow: 1px 1px 1px #999; 
+}
+.real{
+	display: none;
+}

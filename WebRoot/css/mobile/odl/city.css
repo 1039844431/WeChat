@@ -1,0 +1,122 @@
+.xiala{
+width:98%;
+background: #ffffff;
+position: absolute;
+top:68px;
+left: .05rem;
+display: none;
+border: 1px solid #EE7621;
+z-index: 999;
+color:#666;
+font-size: 14px;
+}
+.xiala:before, .xiala:after{
+content: '';
+display: block;
+width: 0;
+height: 0;
+border-width: 10px;
+border-style: solid;
+position: absolute;
+left: 34%;
+z-index: 999999;
+}
+.xiala:before{
+border-color: rgba(181, 70, 70, 0) rgba(16, 15, 15, 0) #fff;
+top: -17px;
+z-index: 9999999;
+}
+.xiala:after{
+border-color: transparent transparent #EE7621;
+top: -20px;
+}
+.xiala>div{/*每个省级小框*/
+width: 78px;
+height: 35px;
+text-align: center;
+line-height: 35px;
+float: left;
+margin: 5px;
+background: #f5f5f5;
+position: relative;
+color:#333;
+
+ 
+}
+.xiala>div>p{/*二级目录大框*/
+display: none;
+width: 6rem;
+height: 220px;
+background: #fff;
+position: relative;
+padding: 10px 5px;
+top:10px;
+left: -1px;
+z-index: 1;
+border: 1px dotted #EE7621;
+
+}
+.point_direction{
+	width:.4rem;
+	height:.4rem; 
+    margin-top:45px; 
+    position: absolute;
+    left: 30px;
+    top: -20px;
+    background:url(../images/page/thumb_direction.svg) right center no-repeat;
+	background-size:.4rem .4rem;
+}
+.xiala>div>p>div{
+margin: 5px;
+float: left;
+position: relative;
+padding: 0px 10px;
+background: #f5f5f5;
+color:#333;
+}
+.xiala>div>p>div>p{
+width: 270px;
+min-height: 30px;
+padding: 5px;
+position: absolute;
+top:45px;
+left:-105px;
+display: none;
+z-index: 2;
+background: #fff;
+border: 2px solid #c9cbce;
+}
+.xiala>div>p>div>p:before, .xiala>div>p>div>p:after{
+content: '';
+display: block;
+width: 0;
+height: 0;
+border-width: 10px;
+border-style: solid;
+position: absolute;
+left: 125px;
+z-index: 999999;
+}
+.xiala>div>p>div>p:before{
+border-color: rgba(181, 70, 70, 0) rgba(16, 15, 15, 0) #fff;
+top: -17px;
+z-index: 9999999;
+}
+.xiala>div>p>div>p:after{
+border-color: transparent transparent #c9cbce;
+top: -20px;
+}
+.xiala>div>p>div>p>span{
+margin: 4px;
+padding: 5px 6px;
+float: left;
+text-align: left;
+height: 25px;
+line-height: 25px;
+display: block;
+background: #f5f5f5;
+color:#333;
+}
+#province,#city,#county{
+display: none;
+}

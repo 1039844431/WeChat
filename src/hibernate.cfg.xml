@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password"></property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/WeChat?useUnicode=true&amp;characterEncoding=utf-8</property>
+		
+		<!--
+		<property name="hibernate.connection.url">jdbc:mysql://115.28.239.120:3306/sar?useUnicode=true&amp;characterEncoding=utf-8</property>
+		-->
+		<property name="hibernate.connection.autocommit">true</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.show_sql">false</property>
+		<mapping resource="com/nicexcx/domain/UserInfo.hbm.xml"/>
+		<mapping resource="com/nicexcx/domain/AppDetail.hbm.xml"/>
+		<mapping resource="com/nicexcx/domain/AppIntroImg.hbm.xml"/>
+		<mapping resource="com/nicexcx/domain/CategoryDic.hbm.xml"/>
+		<mapping resource="com/nicexcx/domain/HotRecommend.hbm.xml"/>
+		<mapping resource="com/nicexcx/domain/GoodRecommend.hbm.xml"/>
+		<mapping resource="com/nicexcx/domain/Collect.hbm.xml"/>
+		<mapping resource="com/nicexcx/domain/Comment.hbm.xml"/>
+	</session-factory>
+</hibernate-configuration>
+

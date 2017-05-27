@@ -1,0 +1,81 @@
+.out_search_container{
+	
+	width: 1040px;
+	margin: 0 auto;
+	margin-top:20px;
+	
+}
+.morePagenoact{
+	display: none;
+}
+.search_logo_container{
+	
+	height:120px;
+	width: 1040px;	
+	margin-bottom:25px;
+
+}
+.logo_container{
+	float:left;
+	width:180px;
+	height:100px;
+	margin-top:25px;	
+	background-image: url("../img/nicexcx.png");
+	background-size:179px 69px;
+	background-position:right top;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.search_container{
+	float:left;
+	width: 860px;
+	height: 130px;
+	
+}
+.search_input{
+	width: 450px;
+	height: 40px;
+	float:left;
+	margin-top:30px;
+	margin-left:30px;
+	border: 2px solid #FF6600;
+	line-height: 45px;
+	font-size: 15px;
+	border-radius:3px;
+	padding-left: 20px;
+}
+.search_button{
+	float:left;
+	width: 80px;
+	height: 50px;
+	border:0px;
+	background-color: #FF6600;
+	margin-top:32px;
+	margin-left: 20px;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius:5px;
+	cursor: pointer;
+}
+.search_button:HOVER{
+	-webkit-box-shadow: 0 3px 3px #c3c3c3;
+    -moz-box-shadow: 0 3px 3px #c3c3c3;
+    box-shadow: 0 3px 3px #c3c3c3;  
+}
+.search_input:FOCUS{
+	-webkit-box-shadow: 0 0 6px #FF8C00, 0 0 6px #FF8C00;
+    -moz-box-shadow: 0 0 6px #FF8C00,  0 0 6px #FF8C00;
+    box-shadow: 0 0 6px #FF8C00,  0 0 6px #FF8C00; 
+    color: black;
+}
+.issue_button{
+	width: 150px;
+}
+.search_or{
+	float:left;
+	width: 10xp;
+	color:#D3D3D3;
+	margin-top: 45px;
+	margin-left: 15px;
+}
