@@ -24,6 +24,15 @@ import com.nicexcx.util.PageNumber;
 import com.nicexcx.util.ReturnMessageBean;
 
 import com.opensymphony.xwork2.ModelDriven;
+/*
+ * @Name: AppDetailAction
+	* @Description: 小程序详细action相关类
+	* @Author: 傅建仁（作者）
+	* @Version: V1.00 （版本号）
+	* @Create Date: 2015-12-13 （创建日期）
+	* @Parameters: commentService，appDetailService，categoryDicService
+	* @Return: 无
+*/
 public class AppDetailAction extends MoreFileUploadAction implements ModelDriven<AppDetailFrom>{	
 	private AppDetailFrom appDetailFrom = new AppDetailFrom();
 	private ICommentService commentService = (ICommentService) ServiceProvider.getService(ICommentService.SERVICE_NAME);
@@ -38,7 +47,7 @@ public class AppDetailAction extends MoreFileUploadAction implements ModelDriven
 		* @Description: 根据每条记录的ID进行查找
 		* @Author: 傅建仁（作者）
 		* @Version: V1.00 （版本号）
-		* @Create Date: 2015-10-13 （创建日期）
+		* @Create Date: 2015-12-13 （创建日期）
 		* @Parameters: appID
 		* @Return: 无
 	 */
@@ -53,6 +62,15 @@ public class AppDetailAction extends MoreFileUploadAction implements ModelDriven
 		
 		return "detail";
 	}
+	/*
+	    * @Name: mobileDetail
+		* @Description: 根据每条记录的ID进行查找（手机端）
+		* @Author: 傅建仁（作者）
+		* @Version: V1.00 （版本号）
+		* @Create Date: 2015-12-13 （创建日期）
+		* @Parameters: appID
+		* @Return: 无
+	 */
 	public String mobileDetail(){
 		String appID = request.getParameter("appID");
 		if(appID != null && !appID.equals("")){
@@ -63,7 +81,9 @@ public class AppDetailAction extends MoreFileUploadAction implements ModelDriven
 		}
 		return "mobileDetail";
 	}
+	
 	public String putCategory(){
+		//从request中获得参数信息
 		String CategoryKey = request.getParameter("CategoryKey").trim();		
 		String CategoryValue = "";
 		List<CategoryDic> categoryDicList = categoryDicService.findCategoryDicList();
@@ -154,7 +174,15 @@ public class AppDetailAction extends MoreFileUploadAction implements ModelDriven
 		request.setAttribute("pageAppDetailFrom", pageAppDetailFrom);
 		return "putCategory";
 	}
-	
+	/*
+	    * @Name: putMobileCategory
+		* @Description: 分类菜单加载
+		* @Author: 傅建仁（作者）
+		* @Version: V1.00 （版本号）
+		* @Create Date: 2015-12-13 （创建日期）
+		* @Parameters: 无
+		* @Return: 无
+	 */
 	public String putMobileCategory(){
 		String CategoryKey = request.getParameter("CategoryKey").trim();		
 		String CategoryValue = "";
@@ -181,7 +209,15 @@ public class AppDetailAction extends MoreFileUploadAction implements ModelDriven
 		request.setAttribute("pageAppDetailFrom", pageAppDetailFrom);
 		return "putMobileCategory";
 	}
-	
+	/*
+	    * @Name: findCategoryAppDetail
+		* @Description: 根据分类的id获得小程序列表
+		* @Author: 傅建仁（作者）
+		* @Version: V1.00 （版本号）
+		* @Create Date: 2015-12-13 （创建日期）
+		* @Parameters: 无
+		* @Return: 无
+	 */
 	public String findCategoryAppDetail(){
 		response.setCharacterEncoding("utf-8");
 		String CategoryKey = request.getParameter("CategoryKey").trim();
@@ -208,7 +244,15 @@ public class AppDetailAction extends MoreFileUploadAction implements ModelDriven
 		return null;
 	}
 	
-
+	/*
+	    * @Name: findAppDetailByUserId
+		* @Description: 根据小程序的ID获得小程序的详细信息
+		* @Author: 傅建仁（作者）
+		* @Version: V1.00 （版本号）
+		* @Create Date: 2016-12-13 （创建日期）
+		* @Parameters: 无
+		* @Return: 无
+	 */
 	public String findAppDetailByUserId(){
 		HttpSession session =  request.getSession();
 		String userID = (String) session.getAttribute("userNameID");
@@ -228,7 +272,15 @@ public class AppDetailAction extends MoreFileUploadAction implements ModelDriven
 		return null;
 	}
 	
-	
+	/*
+	    * @Name: setSearchKey
+		* @Description: 根据查询关键字返回给查询页面框
+		* @Author: 傅建仁（作者）
+		* @Version: V1.00 （版本号）
+		* @Create Date: 2016-12-13 （创建日期）
+		* @Parameters: 无
+		* @Return: 无
+	 */
 	public String setSearchKey(){
 		String searchKey = request.getParameter("searchKey");
 		if(searchKey != null){
@@ -237,7 +289,15 @@ public class AppDetailAction extends MoreFileUploadAction implements ModelDriven
 		
 		return "searchHome";
 	}
-	
+	/*
+	    * @Name: setSearchKey
+		* @Description: 根据查询关键字返回给查询页面框（手机端）
+		* @Author: 傅建仁（作者）
+		* @Version: V1.00 （版本号）
+		* @Create Date: 2016-12-13 （创建日期）
+		* @Parameters: 无
+		* @Return: 无
+	 */
 	public String setMobileSearchKey(){
 		String searchKey = request.getParameter("searchKey");
 		if(searchKey != null){
@@ -245,7 +305,15 @@ public class AppDetailAction extends MoreFileUploadAction implements ModelDriven
 		}
 		return "serchAppList";
 	}
-	
+	/*
+	    * @Name: search
+		* @Description: 根据查询关键字查询列表信息，并且组装成json格式
+		* @Author: 傅建仁（作者）
+		* @Version: V1.00 （版本号）
+		* @Create Date: 2016-12-13 （创建日期）
+		* @Parameters: 无
+		* @Return: 无
+	 */
 	public String search(){
 		response.setCharacterEncoding("utf-8");
 		String searchKey = request.getParameter("searchKey");
@@ -261,6 +329,15 @@ public class AppDetailAction extends MoreFileUploadAction implements ModelDriven
 		return null;
 	}
 	
+	/*
+	    * @Name: deleteAppdetail
+		* @Description: 根据前台传来的小程序ID，对小程序进行逻辑删除
+		* @Author: 傅建仁（作者）
+		* @Version: V1.00 （版本号）
+		* @Create Date: 2016-12-17 （创建日期）
+		* @Parameters: 无
+		* @Return: 无
+	 */
 	public String deleteAppdetail(){
 		response.setCharacterEncoding("utf-8");
 		String appDetailID =  request.getParameter("deleteID");
@@ -287,7 +364,15 @@ public class AppDetailAction extends MoreFileUploadAction implements ModelDriven
 		}
 		return null;
 	}
-	
+	/*
+	    * @Name: addLookPeople
+		* @Description: 每次浏览小程序后都将小程序浏览量加一
+		* @Author: 傅建仁（作者）
+		* @Version: V1.00 （版本号）
+		* @Create Date: 2016-12-15（创建日期）
+		* @Parameters: 无
+		* @Return: 无
+	 */
 	public String addLookPeople(){
 		response.setCharacterEncoding("utf-8");
 		String appDetailID =  request.getParameter("appDetailID");
